@@ -6,7 +6,6 @@
     <title>CSS Selectors Example</title>
     <style>
       /* 1. Universal Selector */
-
       * {
         margin: 0;
         padding: 0;
@@ -18,6 +17,17 @@
         font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
         font-size: 16px;
         margin-bottom: 20px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #333;
+        font-size: 16px;
+        font-weight: bold;
+        padding: 10px;
+        background-color: #f0f0f0;
+        border-radius: 5px;
+        border: 2px solid #333;
       }
 
       /* 3. Class Selector */
@@ -40,38 +50,61 @@
       }
 
       /* 6. Descendant Selector */
+      article p {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        font-style: italic;
+      }
+
       /* 7. Child Selector */
       div > p {
-        background-color: #880404;
+        background-color: #f0f0f0;
+        color: #333;
+        padding: 10px;
+        font-weight: bold;
       }
 
       /* 8. Adjacent Sibling Selector */
       h1 + p {
-        font-weight: bold;
+        background-color: #ffcccb;
+        color: #333;
+        padding: 10px;
+        font-style: italic;
       }
 
       /* 9. General Sibling Selector */
       h2 ~ p {
-        color: #860303;
+        background-color: #add8e6;
+        color: #333;
+        padding: 10px;
+        font-style: italic;
       }
 
       /* 10. Pseudo-class Selector */
-
       a:hover {
-        background-color: #14a50e;
-        text-decoration: none;
-        color: #1a1a1a;
-        padding: 5px;
-        margin: 4px;
+        background-color: #333;
+        border: 2px solid #f0f0f0;
+        color: white;
+        transition: all 0.3s ease;
       }
 
       /* 11. Pseudo-element Selector */
       p::first-letter {
+        font-size: 2em;
+        color: crimson;
         font-weight: bold;
-        font-size: 30px;
       }
 
       /* 12. Grouping Selector */
+      h1,
+      h2,
+      h3 {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        color: orange;
+      }
+
       /* Add your CSS rules here */
     </style>
   </head>
